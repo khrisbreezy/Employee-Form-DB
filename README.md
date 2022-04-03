@@ -18,6 +18,36 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+- FRONTEND
+
+    All forms created to collect information on the frontend and all forms a required to be submitted
+
+
+- BACKEND
+
+   A Mock Api was created in the ['pages/api/employee'](/pages/api/employee) to get employee's data base and make a post request to store an employee's information in the [/data/employeeList'](data/employeeList) (Assuming this is our database).
+
+
+
+The Example below is how the data is structured and saved to the [database](data/employeeList) (Assuming this is our database)
+
+    [
+        {
+            countryInfo: {name: "Spain", currencies: {EUR: {name: "Euro", symbol: "€"}}, languages: {spa: "Spanish"},…}
+            dateOfBirth: "1985/01/01"
+            firstName: "Joe"
+            holidayAllowance: "30"
+            id: 1648992214522
+            lastName: "Biden"
+            maritalStatus: "Married"
+            socialInsuranceNumber: "1234567"
+            termsAndCondition: true
+            uniqueId: "JoeBiden1985/01/01"
+            workingHours: "8"
+        }
+    ]
+    
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
