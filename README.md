@@ -25,7 +25,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 - BACKEND
 
-   A Mock Api was created in the ['pages/api/employee'](/pages/) to get employee's data base and make a post request to store an employee's information in the [/data/employeeList'](data/employeeList) (Assuming this is our database).
+   A Mock Api was created in the ['pages/api/employee'](/) to get employee's data base and make a post request to store an employee's information in the [/data/employeeList'](data/employeeList) (Assuming this is our database).
    
    https://github.com/khrisbreezy/Employee-Form-Database/tree/master/pages
 
