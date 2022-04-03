@@ -115,7 +115,6 @@ const Home = () => {
             const d = await response.json();
             NotificationManager.success('Submitted successfully', '', 4000);
             setLoading(false);
-            setInputType('text');
             reset({});
             setSelectedCountry(null);
         } catch (e) {
@@ -159,6 +158,7 @@ const Home = () => {
                                             type="text" 
                                             name="firstName" 
                                             ref={register({ required: 'This field is required' })}
+                                            required
                                         />
 
                                         {errors.firstName && <Error>{errors.firstName.message}</Error>}
@@ -170,6 +170,7 @@ const Home = () => {
                                             type="text" 
                                             name="lastName"
                                             ref={register({ required: 'This field is required' })} 
+                                            required
                                         />
 
                                         {errors.lastName && <Error>{errors.lastName.message}</Error>}
@@ -185,6 +186,7 @@ const Home = () => {
                                     name="dateOfBirth"
                                     max={minDate}
                                     ref={register({ required: 'This field is required' })} 
+                                    required
                                 />
 
                                 {errors.dateOfBirth && <Error>{errors.dateOfBirth.message}</Error>}
@@ -223,6 +225,7 @@ const Home = () => {
                                     type="text" 
                                     name="numberOfChildren" 
                                     ref={register({ required: 'This field is required' })}
+                                    required
                                 />
 
                                 {errors.numberOfChildren && <Error>{errors.numberOfChildren.message}</Error>}
@@ -234,6 +237,7 @@ const Home = () => {
                                     type="number" 
                                     name="socialInsuranceNumber" 
                                     ref={register({ required: 'This field is required' })}
+                                    required
                                 />
 
                                 {errors.socialInsuranceNumber && <Error>{errors.socialInsuranceNumber.message}</Error>}
@@ -244,6 +248,7 @@ const Home = () => {
                                     type="number" 
                                     name="workingHours" 
                                     ref={register({ required: 'This field is required'})}
+                                    required
                                 />
 
                                 {errors.workingHours && <Error>{errors.workingHours.message}</Error>}
@@ -253,9 +258,10 @@ const Home = () => {
                                     className='mr-2'
                                     type="checkbox" 
                                     name="termsAndCondition"
-                                    ref={register({ required: 'This field is required' })}
-                                    id="inlineRadio2" />
-                                    <label htmlFor="inlineRadio2">I agree that all the information stated in this form is right and correct.</label>
+                                    ref={register({ required: 'You have to agree to the terms and conditions stated' })}
+                                    id="termsAndCondition"
+                                    required />
+                                    <label htmlFor="termsAndCondition">I agree that all the information stated in this form is right and correct.</label>
                                 </div>
 
                                 {errors.termsAndCondition && <Error>{errors.termsAndCondition.message}</Error>}
