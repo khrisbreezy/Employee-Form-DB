@@ -1,0 +1,24 @@
+header {
+    &.banner {
+        background-image: linear-gradient(to right bottom, rgba(0, 39, 118, .8), rgba(0, 159, 218, .8)),url('/img/banner.webp');
+        height: 50vh;
+        background-size: contain;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        p {
+            color: #fff;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .banner-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

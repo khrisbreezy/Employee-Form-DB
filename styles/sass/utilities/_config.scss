@@ -1,0 +1,40 @@
+// Font Stacks
+
+@mixin do-font-face($name, $file-name, $url, $type, $weight, $style){
+  @font-face {
+    font-family: $name;
+    //src: url(#{$url + $file-name}.eot);
+    //src: url(#{$url + $file-name}.eot?#iefix) format('embedded-opentype');
+    @if $type == "otf"{
+      src: url(#{$url + $file-name}.otf) format('opentype');
+    }
+    @if $type == "ttf"{
+      src: url(#{$url + $file-name}.ttf) format('truetype');
+    }
+    @if $type == "woff"{
+      src: url(#{$url + $file-name}.woff);
+    }
+    @if $type == "woff2"{
+      src: url(#{$url + $file-name}.woff2);
+    }
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@include do-font-face('Monape', 'manrope-regular', '/fonts/', 'ttf', 400, normal);
+@include do-font-face('Monape', 'manrope-bold', '/fonts/', 'ttf', 700, normal);
+
+$monape      : 'Monape', sans-serif;
+
+$ffb            : $monape;
+
+$light          : 300;
+$normal         : normal;
+$semibold       : 500;
+$bold           : bold;
+$black-weight   : 900;
+
+// Colors
+// #009fda
+

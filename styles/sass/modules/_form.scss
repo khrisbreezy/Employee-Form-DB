@@ -1,0 +1,104 @@
+form {
+    text-align: left;
+
+    input.form-input {
+        font-size: 1.5rem;
+        font-family: inherit;
+        color: inherit;
+        padding: 1.5rem 1rem;
+        border-radius: 5px;
+        background-color: rgba(#fff, .5);
+        border: none;
+        border-bottom: 3px solid transparent;
+        display: block;
+        transition: all .3s;
+        margin-bottom: 10px;
+        width: 100%;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba(#000, .1);
+            border-bottom: 3px solid #002776;
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid red;
+        }
+
+        &::-webkit-input-placeholder {
+            color: #222;
+        }
+    }
+
+    label {
+        text-align: left;
+        font-weight: 600;
+    }
+
+    .select-tool {
+        width: 100%;
+        margin-bottom: 10px;
+        color: #222;
+        background-size: 13px;
+        font-size: 1.5rem;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    .css-1n7v3ny-option {
+        background-color: rgba(0, 39, 118, .4)
+    }
+
+    .css-9gakcf-option {
+        background-color: #002776;
+        color: #fff;
+    }
+    
+
+    .css-1wa3eu0-placeholder {
+        color: #222;
+    }
+  
+    .css-1okebmr-indicatorSeparator {
+        background-color: transparent;
+    }
+
+    .css-tlfecz-indicatorContainer {
+        svg {
+            fill: #222 !important;
+        }
+    }
+
+    .css-1pahdxg-control {
+         padding: 0.5rem 0.2rem;
+
+        &:active, &:focus {
+            outline: none;
+        }
+    }
+
+    .css-1pahdxg-control:hover {
+    border-color: none;
+    box-shadow: none;
+    }
+
+    .css-yk16xz-control {
+        border-color: none;
+        outline: none;
+        background-color: rgba(#fff, .5);
+        padding: 0.5rem 0.2rem;
+        cursor: pointer;
+        border-bottom: 3px solid transparent;
+
+        &:hover {
+            border-color: transparent;
+        }
+    }
+
+    .tandc {
+        margin-top: 15px;
+        border: 2px solid #002776;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
