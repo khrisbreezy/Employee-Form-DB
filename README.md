@@ -7,9 +7,6 @@ This is a code test for Crowdforce
 
          Run npm install
 
-- REQUIRE
-
-       
 
 - FRONTEND
 
