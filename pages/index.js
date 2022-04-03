@@ -14,7 +14,6 @@ const Home = () => {
     const { handleSubmit, errors, register, reset } = useForm();
 
     const [countries, setCountries] = useState(null);
-    const [inputType, setInputType] = useState('text');
     const [holsAllowance, setHolsAllowance] = useState(null);
     const [showCountryError, setShowCountryError] = useState(false);
     const [selectedCountry, setSelectedCountry] = useState(null);
@@ -84,10 +83,6 @@ const Home = () => {
         setMaritalStatus(val);
     };
 
-    const changeOnFocus = () => {
-        setInputType('date');
-    };
-
     const submitEmployeeForm = async (data) => {
         if (!selectedCountry) {
             setShowCountryError(true);
@@ -134,22 +129,22 @@ const Home = () => {
         <>
         <header className="banner">
             <div className="banner-container">
+                <img src="/img/logo.png" alt="" className='img-fluid logo-img' />
                 <h1>Employee Form</h1>
-                <p>Helping you employ people all over the world by filling the form below.</p>
+                <p>Helping you employ people all over the world.</p>
             </div>
         </header>
         <section className="form-page">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-6 mx-auto">
+                    <div className="col-lg-6 col-md-8 mx-auto">
                         <div className="form-continer">
                             <form onSubmit={handleSubmit(submitEmployeeForm)}>
-                                <label>Select a Country</label>
+                                <label>Select Country</label>
                                 <Select
                                     value={selectedCountry}
                                     options={countries}
                                     className={"select-tool"}
-                                    placeholder="Country of Work"
                                     instanceId="countryId"
                                     onChange={handleCountryInputChange}
                                 />
@@ -162,7 +157,6 @@ const Home = () => {
                                             <input 
                                             className="form-input" 
                                             type="text" 
-                                            placeholder="Enter First Name" 
                                             name="firstName" 
                                             ref={register({ required: 'This field is required' })}
                                         />
@@ -174,7 +168,6 @@ const Home = () => {
                                             <input 
                                             className="form-input"  
                                             type="text" 
-                                            placeholder="Enter Last Name" 
                                             name="lastName"
                                             ref={register({ required: 'This field is required' })} 
                                         />
@@ -185,10 +178,9 @@ const Home = () => {
 
                                 <label>Date of Birth</label>
                                 <input 
-                                    placeholder="Enter Date of Birth" 
+                                   
                                     className="form-input" 
-                                    type={inputType} 
-                                    onFocus={changeOnFocus} 
+                                    type="date" 
                                     id="date"
                                     name="dateOfBirth"
                                     max={minDate}
@@ -201,7 +193,6 @@ const Home = () => {
                                 <input      
                                     className="form-input"  
                                     type="number" 
-                                    placeholder="Enter Holiday Allowance" 
                                     name="holidayAllowance" 
                                     ref={register({ required: `This field is required`})}
                                     max={holsAllowance}
@@ -216,7 +207,6 @@ const Home = () => {
                                     <Select
                                         options={marritalStatusList}
                                         className={"select-tool"}
-                                        placeholder="Marital Status"
                                         instanceId="maritalStatusId"
                                         onChange={handleStatusChange}
                                     />
@@ -231,7 +221,6 @@ const Home = () => {
                                     <input 
                                     className="form-input"  
                                     type="text" 
-                                    placeholder="Number of Children" 
                                     name="numberOfChildren" 
                                     ref={register({ required: 'This field is required' })}
                                 />
@@ -243,7 +232,6 @@ const Home = () => {
                                 <input 
                                     className="form-input"  
                                     type="number" 
-                                    placeholder="Enter Social Insurance Number" 
                                     name="socialInsuranceNumber" 
                                     ref={register({ required: 'This field is required' })}
                                 />
@@ -254,7 +242,6 @@ const Home = () => {
                                 <input      
                                     className="form-input"  
                                     type="number" 
-                                    placeholder="Enter Working Hours" 
                                     name="workingHours" 
                                     ref={register({ required: 'This field is required'})}
                                 />

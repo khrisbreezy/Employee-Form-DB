@@ -7,11 +7,10 @@ header {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        text-align: center;
 
         p {
             color: #fff;
-            text-align: center;
-            font-size: 20px;
         }
 
         .banner-container {
@@ -19,6 +18,11 @@ header {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+        }
+
+        .logo-img {
+            background: rgba(255, 255, 255, .8);
+            padding: 4px;
         }
     }
 }
