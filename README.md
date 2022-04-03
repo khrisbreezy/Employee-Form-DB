@@ -2,22 +2,21 @@
 This is a code test for Crowdforce
 
 
-# Employee-Form-Database
-This is a code test for Crowdforce
-
-
 - SETUP
 
 
          Run npm install
 
+- REQUIRE
+
+       
 
 - FRONTEND
 
     All forms created to collect information on the frontend and all forms a required to be submitted
 
 
-BACKEND
+- BACKEND
 
    A Mock Api was created in the ['pages/api/employee'](/pages/api/employee) to get employee's data base and make a post request to store an employee's information in the [/data/employeeList'](data/employeeList) (Assuming this is our database).
 
