@@ -18,14 +18,14 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 - FRONTEND
 
-    All forms created to collect information on the frontend and all forms a required to be submitted
+    All forms created to collect information on the frontend and all forms are required to be submitted
 
 
 - BACKEND
 
     [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/employee](http://localhost:3000/api/employee). This endpoint can be edited in `pages/api/employee.js`.
 
-   A Mock Api was created in the `pages/api` directory is mapped to `/api/*`. The ['pages/api/employee'](http://localhost:3000/api/employee) api is used to get employee's database and make a post request to store an employee's information in the [/data/employeeList'](http://localhost:3000/data/employeeList) (Assuming this is our database).
+   A Mock Api was created in the `pages/api` directory and is mapped to `/api/*`. The ['pages/api/employee'](http://localhost:3000/api/employee) api is used to get employee's database and make a post request to store an employee's information in the [/data/employeeList'](http://localhost:3000/data/employeeList) (Assuming this is our database).
    
    https://github.com/khrisbreezy/Employee-Form-Database/tree/master/pages
 
