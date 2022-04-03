@@ -16,7 +16,39 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- FRONTEND
+
+    All forms created to collect information on the frontend and all forms are required to be submitted
+
+
+- BACKEND
+
+    [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/employee](http://localhost:3000/api/employee). This endpoint can be edited in `pages/api/employee.js`.
+
+   A Mock Api was created in the `pages/api` directory and is mapped to `/api/*`. The ['pages/api/employee'](http://localhost:3000/api/employee) api is used to get employee's database and make a post request to store an employee's information in the [/data/employeeList'](http://localhost:3000/data/employeeList) (Assuming this is our database).
+   
+   https://github.com/khrisbreezy/Employee-Form-Database/tree/master/pages
+
+
+
+The Example below is how the data is structured and saved to the [database](http://localhost:3000/data/employeeList) (Assuming this is our database)
+
+    [
+        {
+            countryInfo: {name: "Spain", currencies: {EUR: {name: "Euro", symbol: "€"}}, languages: {spa: "Spanish"},…}
+            dateOfBirth: "1985/01/01"
+            firstName: "Joe"
+            holidayAllowance: "30"
+            id: 1648992214522
+            lastName: "Biden"
+            maritalStatus: "Married"
+            socialInsuranceNumber: "1234567"
+            termsAndCondition: true
+            uniqueId: "JoeBiden1985/01/01"
+            workingHours: "8"
+        }
+    ]
+    
 
 ## Learn More
 
