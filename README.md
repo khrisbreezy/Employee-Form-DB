@@ -40,7 +40,7 @@ The Example below is how the data is structured and saved to the [database](http
             firstName: "Joe"
             holidayAllowance: "30"
             id: 1648992214522
-            lastName: "Biden"
+            lastName: "Biden"  
             maritalStatus: "Married"
             socialInsuranceNumber: "1234567"
             termsAndCondition: true
